@@ -58,5 +58,6 @@ production:
     <<: *default
     database: cms_platform_production
     username: cms_platform
-    password: <%= ENV['DB_PASSWORD'] %>
-    host: <%= ENV['DB_HOST'] %>
+    url: <%= ENV["DATABASE_URL"]&.sub("mariadb://", "mysql2://") %>
+    # password: <%= ENV['DB_PASSWORD'] %>
+    # host: <%= ENV['DB_HOST'] %>
