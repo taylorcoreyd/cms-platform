@@ -4,4 +4,7 @@ class ApplicationController < ActionController::Base
 
   # Changes to the importmap will invalidate the etag for HTML responses
   stale_when_importmap_changes
+
+  # Will be included in every request of ApplicationController, so every request in this app.
+  include SetTenant
 end
