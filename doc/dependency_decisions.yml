@@ -53,3 +53,9 @@
     :why:
     :versions: []
     :when: 2026-05-23 06:22:41.301708202 Z
+- - :ignore
+  - brakeman
+  - :who:
+    :why:
+    :versions: []
+    :when: 2026-05-23 07:22:58.030185915 Z
