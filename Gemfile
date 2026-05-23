@@ -53,6 +53,8 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 
   gem 'license_finder', require: false
+  gem "rspec-rails", "~> 8.0"
+  gem "factory_bot_rails", "~> 6.5"
 end
 
 group :development do
@@ -60,6 +62,6 @@ group :development do
   gem "web-console"
 end
 
-gem "rspec-rails", "~> 8.0"
-gem "factory_bot_rails", "~> 6.5"
-gem "faker", "~> 3.8"
+group :test do
+  gem "faker", "~> 3.8"
+end
